@@ -24,7 +24,7 @@ const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='react-js-training'>
       <Layout>
         <Suspense fallback={null}>
           <Routes>
