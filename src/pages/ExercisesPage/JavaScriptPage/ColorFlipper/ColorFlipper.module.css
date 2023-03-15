@@ -1,0 +1,32 @@
+.colorFlipper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.colorFlipper_description {
+  padding: 15px;
+
+  background-color: antiquewhite;
+
+  border-radius: 10px;
+}
+
+.colorFlipper_holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorFlipper_button {
+  padding: 10px;
+  border-color: transparent;
+  border-radius: 10px;
+  background-color: beige;
+  transition: background-color 250ms linear;
+}
+
+.colorFlipper_button:hover,
+.colorFlipper_button:focus {
+  background-color: burlywood;
+}
