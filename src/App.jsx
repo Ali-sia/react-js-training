@@ -14,6 +14,9 @@ const JavaScriptPage = lazy(() =>
 const ColorFlipper = lazy(() =>
   import("./pages/ExercisesPage/JavaScriptPage/ColorFlipper/ColorFlipper")
 );
+const Counter = lazy(() =>
+  import("./pages/ExercisesPage/JavaScriptPage/Counter/Counter")
+);
 const ReactPage = lazy(() =>
   import("./pages/ExercisesPage/ReactPage/ReactPage")
 );
@@ -24,7 +27,7 @@ const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 
 function App() {
   return (
-    <BrowserRouter basename='react-js-training'>
+    <BrowserRouter basename="react-js-training">
       <Layout>
         <Suspense fallback={null}>
           <Routes>
@@ -34,6 +37,7 @@ function App() {
               <Route path="vanilajs">
                 <Route index element={<JavaScriptPage />} />
                 <Route path="colorFlipper" element={<ColorFlipper />} />
+                <Route path="counter" element={<Counter />} />
               </Route>
               <Route path="react">
                 <Route index element={<ReactPage />} />

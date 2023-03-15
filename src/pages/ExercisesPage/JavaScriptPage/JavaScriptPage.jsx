@@ -12,6 +12,11 @@ const JavaScriptPage = () => {
             ColorFlipper
           </NavLink>
         </li>
+        <li>
+          <NavLink to="counter" state={{ from: location }}>
+            Counter
+          </NavLink>
+        </li>
       </ol>
 
       <Suspense fallback={<p>Loading inside JS exercises...</p>}>
